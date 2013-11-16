@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:scrollbars="vertical" android:orientation="vertical">
+    <ScrollView android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent" >
+        <LinearLayout android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical">
+        	<TextView android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:padding="20dip"
+				android:textAppearance="?android:attr/textAppearanceLarge" 
+				android:textColor="#00ff00"
+				android:textStyle="bold"
+				android:background="#ff9933"
+				android:text="@string/szCubeMethod2"/>
+            <Button android:text="@string/method2_step1" 
+            	android:id="@+id/helpBtn1" 
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:gravity="fill_vertical"
+            	android:drawableRight="@android:drawable/ic_menu_compass"
+            	android:layout_width="fill_parent"
+            	android:background="#cccccc" 
+            	android:layout_height="wrap_content"/>
+            <Button android:text="@string/method2_step2" 
+            	android:id="@+id/helpBtn2" 
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:gravity="fill_vertical"
+            	android:drawableRight="@android:drawable/ic_menu_compass"
+            	android:layout_width="fill_parent"
+            	android:background="#ff9933" 
+            	android:layout_height="wrap_content"/>
+            <Button android:text="@string/method2_step3" 
+            	android:id="@+id/helpBtn3" 
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:gravity="fill_vertical"
+            	android:drawableRight="@android:drawable/ic_menu_compass"
+            	android:layout_width="fill_parent"
+            	android:background="#cccccc" 
+            	android:layout_height="wrap_content"/>
+            <Button android:text="@string/method2_step4" 
+            	android:id="@+id/helpBtn4" 
+            	android:textAppearance="?android:attr/textAppearanceMedium"
+            	android:gravity="fill_vertical"
+            	android:drawableRight="@android:drawable/ic_menu_compass"
+            	android:layout_width="fill_parent"
+            	android:background="#ff9933" 
+            	android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="fill_parent" 
+        		android:layout_height="300dip"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

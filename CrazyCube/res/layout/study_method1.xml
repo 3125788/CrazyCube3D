@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:scrollbars="vertical" android:orientation="vertical">
+    <ScrollView android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent" 
+    		android:paddingRight="3dip">
+    		<LinearLayout  android:layout_width="fill_parent"
+  				android:layout_height="fill_parent"
+  				android:scrollbars="vertical" 
+  				android:orientation="vertical">
+        	    <TextView android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:padding="15dip"
+				android:textAppearance="?android:attr/textAppearanceLarge" 
+				android:textColor="#00ff00"
+				android:textStyle="bold"
+				android:text="@string/szCubeMethod1"/>
+  			
+    		<RadioGroup android:layout_width="fill_parent"
+  				android:layout_height="wrap_content">
+    		<RadioButton android:id="@+id/rdStep1"
+    			android:text="@string/method1_step1"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		<RadioButton android:id="@+id/rdStep2"
+    			android:text="@string/method1_step2"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		<RadioButton android:id="@+id/rdStep3"
+    			android:text="@string/method1_step3"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		<RadioButton android:id="@+id/rdStep4"
+    			android:text="@string/method1_step4"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		<RadioButton android:id="@+id/rdStep5"
+    			android:text="@string/method1_step5"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		<RadioButton android:id="@+id/rdStep6"
+    			android:text="@string/method1_step6"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		<RadioButton android:id="@+id/rdStep7"
+    			android:text="@string/method1_step7"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		</RadioGroup>
+    		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

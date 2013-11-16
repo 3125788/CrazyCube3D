@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <ScrollView android:layout_height="fill_parent" 
+    android:layout_width="fill_parent">
+    <LinearLayout 
+      	android:layout_width="fill_parent" 
+      	android:layout_height="fill_parent"
+      	android:gravity="center_vertical"
+      	android:orientation="vertical">
+		  <TextView android:layout_height="wrap_content" 
+		  	android:paddingTop="10dip" 
+		  	android:id="@+id/txtMsg" 
+		  	android:textAppearance="?android:attr/textAppearanceMedium" 
+		  	android:layout_width="fill_parent" 
+		  	android:paddingRight="10dip" 
+		  	android:paddingLeft="10dip" 
+		  	android:text="AboutMsg"/>
+		  <TextView android:paddingLeft="10dip"
+		  	android:paddingRight="10dip"
+		  	android:paddingTop="10dip"
+		  	android:id="@+id/txtVersion"
+		  	android:layout_width="fill_parent" 
+		  	android:layout_height="wrap_content"
+		  	android:textAppearance="?android:attr/textAppearanceMedium" 
+		  	android:text="Version"/>  	
+		  <TextView android:paddingLeft="10dip"
+		  	android:paddingRight="10dip"
+		  	android:paddingTop="10dip"
+		  	android:id="@+id/txtCopyRight"
+		  	android:layout_width="fill_parent" 
+		  	android:layout_height="wrap_content"
+		  	android:textAppearance="?android:attr/textAppearanceMedium" 
+		  	android:text="Copyrights"/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

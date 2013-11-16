@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:scrollbars="vertical" 
+  android:orientation="vertical">
+ <ScrollView android:layout_height="fill_parent" 
+	android:layout_width="fill_parent" 
+	android:id="@+id/scrollView1">
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/fl_step1" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/fl_1_1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+  	<TextView android:text="@string/fl_1_2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  	<TextView android:text="@string/fl_1_3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
+</LinearLayout>

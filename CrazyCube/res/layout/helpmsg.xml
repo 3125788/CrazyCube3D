@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutBack"
+    android:gravity="center_vertical"
+    android:layout_margin="5dip"
+    android:orientation="horizontal">
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="帮助信息"
+        android:id="@+id/txtMsg"/>        
+</LinearLayout>

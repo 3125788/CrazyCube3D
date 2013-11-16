@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:gravity="center_vertical"
+  android:background="@drawable/background"
+  android:scrollbars="vertical" android:orientation="vertical">
+    <ScrollView android:layout_height="450dip" 
+    		android:layout_width="fill_parent">
+        <LinearLayout android:paddingTop="40dip" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:gravity="center_vertical"
+        	android:orientation="vertical">
+        <LinearLayout  android:gravity="center_horizontal" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical">
+        	<TextView  android:gravity="center_vertical"
+        		android:layout_width="230dip" 
+        		android:textColor="#ffffffff"
+        		android:layout_height="fill_parent"
+        		android:textSize="24dip" 
+        		android:text="@string/app_name"
+        		android:drawableLeft="@drawable/icon">
+        	</TextView>
+        </LinearLayout>
+        <LinearLayout  android:gravity="center_horizontal"
+        	android:paddingTop="12dip" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal">
+            <Button android:id="@+id/btnPlay"
+                android:text="@string/menuPlay"
+            	android:drawableLeft="@drawable/cube"
+            	android:textAppearance="?android:attr/textAppearanceMedium" 
+            	android:layout_height="wrap_content" 
+            	android:layout_width="150dip">
+            </Button>
+            <Button android:id="@+id/btnHelp"
+                android:text="@string/menuHelp"
+            	android:drawableLeft="@drawable/help_menu"
+            	android:textAppearance="?android:attr/textAppearanceMedium" 
+            	android:layout_height="wrap_content" 
+            	android:layout_width="150dip">
+            </Button>                
+		</LinearLayout>
+		<LinearLayout android:gravity="center_horizontal" 
+			android:paddingTop="8dip"
+			android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal">
+            <Button android:id="@+id/btnStudy"
+                android:text="@string/menuStudy"
+            	android:drawableLeft="@drawable/study_menu"
+            	android:textAppearance="?android:attr/textAppearanceMedium" 
+            	android:layout_height="wrap_content" 
+            	android:layout_width="150dip">
+            </Button>
+            <Button android:id="@+id/btnAbout"
+                android:text="@string/menuAbout"
+            	android:drawableLeft="@drawable/about"
+            	android:textAppearance="?android:attr/textAppearanceMedium" 
+            	android:layout_height="wrap_content" 
+            	android:layout_width="150dip">
+            </Button>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+        	android:paddingTop="8dip" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal">
+		    <Button android:id="@+id/btnSetup"
+                android:text="@string/menuSetup"
+            	android:drawableLeft="@drawable/setup_menu"
+            	android:textAppearance="?android:attr/textAppearanceMedium" 
+            	android:layout_height="wrap_content" 
+            	android:layout_width="150dip">
+            </Button>        
+            <Button android:id="@+id/btnExit"
+                android:text="@string/menuExit"
+            	android:drawableLeft="@drawable/exit_menu"
+            	android:textAppearance="?android:attr/textAppearanceMedium" 
+            	android:layout_height="wrap_content" 
+            	android:layout_width="150dip">
+            </Button>                
+        </LinearLayout>
+        <LinearLayout  android:gravity="center_horizontal" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:paddingTop="12dip" 
+        	android:orientation="vertical">
+        	<TextView  android:gravity="center_horizontal"
+        		android:textAppearance="?android:attr/textAppearanceMedium" 
+        		android:layout_width="fill_parent" 
+        		android:textColor="#ffffffff"
+        		android:layout_height="fill_parent"
+        		android:autoLink="web"
+        		android:text="@string/copyright">
+        	</TextView>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

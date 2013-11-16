@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="308" android:versionName="3.0.8" package="elong.CrazyCube">
+    <uses-sdk android:minSdkVersion="7" />
+
+		<!-- 添加用户权限-->
+		<!-- 连接网络权限INTERNET ，用于请求广告(必须) -->
+		<uses-permission android:name="android.permission.INTERNET" />
+		<!-- 读取手机基本信息权限READ_PHONE_STATE，用于精确统计用户的机型等信息(必须) -->
+		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+		<!-- 读取网络信息权限ACCESS_NETWORK_STATE，用于识别gprs网络的接入点的情况(必须) -->
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<!-- 获取用户地理信息权限，用于帮助精确统计开发者的程序发布之后的用户分布情况-->
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+		<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+		<!-- 读写sd 卡的权限，用于缓存广告所用到的图片，节省流量，并可获得更好的用户体验-->
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+		<!--如果添加的自助广告为电话类型，则需要电话权限，点击广告可以直接跳转到拨打电话页面-->
+		<uses-permission android:name="android.permission.CALL_PHONE" />
+		<!-- 获得当前wifi的状态，微云广告平台需要此权限-->
+		<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+		<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+		
+		<!-- 按效果付费功能需要的权限,mogo会使用该权限 -->
+		<uses-permission android:name="android.permission.GET_TASKS" />
+		<!--随踪所需权限 -->
+		<uses-permission android:name="android.permission.WAKE_LOCK"/>
+		<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+		<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+		<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+		
+		
+    <application android:icon="@drawable/icon" 
+    	android:label="@string/app_name"
+    	android:theme="@style/Theme.MainActivity">
+        <activity android:name=".CrazyCubeMain" 
+        	android:screenOrientation="portrait"
+        	android:theme="@style/Theme.MainActivity">
+            <intent-filter>
+            	<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<!--YOUMI AD-->
+        <activity android:name="net.youmi.android.AdActivity" 
+			android:configChanges="keyboard|keyboardHidden|orientation"/>
+		<activity android:name="net.youmi.android.appoffers.AppOffersActivity" 
+ 			android:configChanges="keyboard|keyboardHidden|orientation"/>
+
+        <!-- 声明多盟的Activity -->
+        <activity
+            android:name="cn.domob.android.ads.DomobActivity"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- 声明安沃的Activity -->
+        <activity
+            android:label="@string/app_name"
+            android:name="com.adwo.adsdk.AdwoAdBrowserActivity" />
+        <!-- 安沃全屏广告 -->
+        <activity
+            android:label="@string/app_name"
+            android:name="com.adwo.adsdk.AdwoSplashAdActivity" />
+
+        <!-- 声明AdMob的Activity -->
+        <activity
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:name="com.google.ads.AdActivity" />
+
+
+        <!-- 注册Service，应用下载所需 -->
+        <service
+            android:exported="true"
+            android:name="com.admogo.UpdateService"
+            android:process=":remote" />
+        
+        <!-- MOGO自动配置积分墙（开始） -->
+		<activity
+			android:name="net.cavas.show.MainLoadCavasActivity"
+			android:configChanges="orientation|keyboardHidden" >
+		</activity>
+		<activity
+			android:name="net.cavas.show.MainLoadCavasDetailActivity"
+			android:configChanges="orientation|keyboardHidden" >
+		</activity>
+		<!-- 注册Service，应用下载所需-->
+		<service android:name="net.cavas.show.MonitorService" />
+		<!-- MOGO自动配置积分墙（结束） -->
+		
+		<!-- 有米积分墙v4.02 （开始） -->
+		<activity
+			android:name="net.youmi.android.AdBrowser"
+			android:configChanges="keyboard|keyboardHidden|orientation"
+			android:theme="@android:style/Theme.NoTitleBar" >
+		</activity>
+		
+		<activity 
+		    android:name="cn.sharesdk.framework.AuthorizeActivity" 
+		    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+		    android:configChanges="keyboardHidden|orientation" 
+		    android:screenOrientation="portrait" 
+		    android:windowSoftInputMode="stateHidden|adjustResize" />
+				    
+		<service
+			android:name="net.youmi.android.AdService"
+			android:exported="false" >
+		</service>
+		<receiver
+			android:name="net.youmi.android.AdReceiver"
+			android:exported="false" >
+		<intent-filter>
+		<action android:name="android.intent.action.PACKAGE_ADDED"
+		/>
+		<data android:scheme="package" />
+		</intent-filter>
+		</receiver>
+		<receiver
+			android:name="net.youmi.android.offers.OffersReceiver"
+			android:exported="false" >
+		</receiver>
+		<!-- 有米积分墙v4.02 （开始） -->
+			
+		<meta-data android:value="8eeeb3ecba2e4af6b925ddd8f5da1c33" android:name="ADMOGO_KEY" />		
+        
+    </application>
+</manifest>

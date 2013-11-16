@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- stylename以及它所继承的系统Theme主题 -->
+	<style name="Theme.MainActivity" parent="android:Theme">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/background</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+	
+	<style name="Theme.QQActivity" parent="android:Theme">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/qq_logo</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>	
+
+	<style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+
+</resources>

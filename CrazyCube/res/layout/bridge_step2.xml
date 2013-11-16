@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:scrollbars="vertical" 
+  android:orientation="vertical">
+ <ScrollView android:layout_height="fill_parent" 
+	android:layout_width="fill_parent" 
+	android:id="@+id/scrollView1">
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_step2" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+  	<TextView android:text="@string/b_2_2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  	<TextView android:text="@string/b_2_3" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+  	<TextView android:text="@string/b_2_4" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#00ff00"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rd" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_5" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+  	<TextView android:text="@string/b_2_6" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#00ff00"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rf" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_7" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rfd" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_8" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rfrfd1" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_9" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rfrfd2" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_10" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content" android:orientation="vertical">
+  	<TextView android:text="@string/b_2_11" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#00ff00"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rb" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_12" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rbd" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_13" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rbrbd1" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_14" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  <LinearLayout   android:layout_width="fill_parent"  android:layout_height="wrap_content">
+    <ImageView android:src="@drawable/b_rbrbd2" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+    <TextView android:text="@string/b_2_15" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+  </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
+</LinearLayout>

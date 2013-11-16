@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutBack"
+    android:gravity="center_vertical"
+    android:layout_margin="5dip"
+    android:orientation="horizontal">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+	    <ImageView android:layout_width="32dip"
+	        android:layout_height="32dip"
+	        android:src="@drawable/close"
+	        android:id="@+id/imgIcon"/>
+	    <TextView android:layout_width="180dip"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dip"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:text="标题"
+	        android:id="@+id/txtTitle"/>        
+    </LinearLayout>"
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"        
+        android:gravity="right"
+        android:layout_weight="3">
+    <LinearLayout android:layout_width="34dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">        	    
+	    <Button android:layout_width="32dip"
+	        android:layout_height="32dip"
+	        android:padding="3dip"
+	        android:id="@+id/btnShare"
+	        android:background="@drawable/sharebutton_32"/>
+	    </LinearLayout>       	  
+    <LinearLayout android:layout_width="34dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">"
+        <Button android:layout_width="32dip"
+	        android:layout_height="32dip"
+	        android:padding="3dip"
+	        android:id="@+id/btnExit"
+	        android:background="@drawable/close"/>
+     </LinearLayout>
+	 </LinearLayout>
+</LinearLayout>

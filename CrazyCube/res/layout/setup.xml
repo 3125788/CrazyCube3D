@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:scrollbars="vertical" android:orientation="vertical">
+    <ScrollView android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent" 
+    		android:id="@+id/scrollView1">
+        <LinearLayout android:id="@+id/linearLayout1"
+        	android:paddingLeft="5dip" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical">
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:id="@+id/chkShake" 
+        			android:layout_height="fill_parent"
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:text="@string/setupShake">
+        </CheckBox>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:id="@+id/chk180Degree" 
+        			android:layout_height="fill_parent"
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:text="@string/setup180degree">
+        </CheckBox>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:id="@+id/chkCenterPlate" 
+        			android:layout_height="fill_parent"
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:text="@string/setupCenterPlate">
+        </CheckBox>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:id="@+id/chkIntelligentTip" 
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:text="@string/setupIntelligentTip" 
+        			android:layout_height="fill_parent">
+        </CheckBox>
+        <LinearLayout android:paddingLeft="30dip" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical">
+	        <CheckBox 	android:layout_width="fill_parent" 
+	        			android:id="@+id/chkIntelligentText" 
+	        			android:textAppearance="?android:attr/textAppearanceSmall"
+	        			android:text="@string/setupIntelligentText" 
+	        			android:layout_height="fill_parent">
+	        </CheckBox>
+	    </LinearLayout>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:id="@+id/chkShowStudy" 
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:text="@string/setupShowStudy" 
+        			android:layout_height="fill_parent">
+        </CheckBox>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:id="@+id/chkShowButton" 
+        			android:text="@string/setupShowButton"
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:drawableRight="@drawable/menu" 
+        			android:layout_height="fill_parent">
+        </CheckBox>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:id="@+id/chkShowUnseen" 
+        			android:text="@string/setupShowUnseen"
+        			android:textAppearance="?android:attr/textAppearanceMedium"
+        			android:drawableRight="@drawable/right"
+        			android:layout_height="fill_parent">
+        </CheckBox>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:layout_height="fill_parent" 
+        			android:text="@string/setupShowStar" 
+        			android:id="@+id/chkShowStar"
+        			android:drawableRight="@drawable/star_pressed"
+        			android:textAppearance="?android:attr/textAppearanceMedium">
+        </CheckBox>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:layout_height="fill_parent" 
+        			android:text="@string/setupShowTip" 
+        			android:id="@+id/chkShowTip"
+        			android:drawableRight="@drawable/formula"
+        			android:textAppearance="?android:attr/textAppearanceMedium">
+        </CheckBox>
+        <LinearLayout android:paddingLeft="30dip" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical">
+	        <CheckBox 	android:layout_width="fill_parent" 
+	        			android:layout_height="fill_parent" 
+	        			android:text="@string/setupTipMode" 
+	        			android:id="@+id/chkTipGraph"
+	        			android:drawableRight="@drawable/start"
+	        			android:textAppearance="?android:attr/textAppearanceSmall">
+	        </CheckBox>
+	    </LinearLayout>
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:layout_height="fill_parent" 
+        			android:text="@string/setupSoundRotate" 
+        			android:id="@+id/chkSoundRotate"
+        			android:drawableRight="@drawable/sound"
+        			android:textAppearance="?android:attr/textAppearanceMedium">
+        </CheckBox>        
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:layout_height="fill_parent" 
+        			android:text="@string/setupShowTime" 
+        			android:id="@+id/chkShowTime"
+        			android:drawableRight="@drawable/time1"
+        			android:textAppearance="?android:attr/textAppearanceMedium">
+        </CheckBox> 
+        <CheckBox 	android:layout_width="fill_parent" 
+        			android:layout_height="fill_parent" 
+        			android:text="@string/setupShowStep" 
+        			android:id="@+id/chkShowStep"
+        			android:drawableRight="@drawable/icon"
+        			android:textAppearance="?android:attr/textAppearanceMedium">
+        </CheckBox> 
+        <LinearLayout android:paddingTop="30dip" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical">
+        	<TextView  	android:layout_width="fill_parent" 
+	        			android:layout_height="fill_parent" 
+	        			android:text="@string/szSelectMethod" 
+	        			android:textAppearance="?android:attr/textAppearanceMedium" />
+    		<RadioGroup android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:paddingLeft="10dip">
+    		<RadioButton android:id="@+id/rdMethod1"
+    			android:text="@string/szCubeMethod1"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+    		<RadioButton android:id="@+id/rdMethod2"
+    			android:text="@string/szCubeMethod2"
+    			android:textAppearance="?android:attr/textAppearanceMedium"
+    			android:layout_width="wrap_content" 
+    			android:layout_height="fill_parent"/>
+			</RadioGroup>
+	    </LinearLayout>        
+        
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
